@@ -1,0 +1,24 @@
+server:
+  port: 8080
+  
+logging:
+  level:
+    com.rbailen.covid: debug
+    
+spring:
+  jpa:
+    show-sql: true
+
+  h2:
+    console:
+      enabled: true
+      
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=- 1;DB_CLOSE_ON_EXIT=FALSE
+     
+covid:
+  service:
+    country-url: https://api.covid19api.com/countries
+    summary-url: https://api.covid19api.com/summary
+    world-total-url: https://api.covid19api.com/world/total
+    status-country-url: https://api.covid19api.com/country/{country}/status/{status}?from={from}&to={to}

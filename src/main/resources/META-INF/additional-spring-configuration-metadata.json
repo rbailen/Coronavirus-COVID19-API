@@ -1,0 +1,22 @@
+{"properties": [
+  {
+    "name": "covid.service.country-url",
+    "type": "java.lang.String",
+    "description": "A description for 'covid.service.country-url'"
+  },
+  {
+    "name": "covid.service.summary-url",
+    "type": "java.lang.String",
+    "description": "A description for 'covid.service.summary-url'"
+  },
+  {
+    "name": "covid.service.status-country-url",
+    "type": "java.lang.String",
+    "description": "A description for 'covid.service.status-country-url'"
+  },
+  {
+    "name": "covid.service.world-total-url",
+    "type": "java.lang.String",
+    "description": "A description for 'covid.service.world-total-url'"
+  }
+]}
