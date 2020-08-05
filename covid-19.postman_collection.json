@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "27144be6-fc51-41ab-bb5f-9c7a884d480c",
+		"name": "covid-19",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Countries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/covid/countries",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"covid",
+						"countries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get World Total",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/covid/world/total",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"covid",
+						"world",
+						"total"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cases By Status and Country",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/covid/country/:country/status/:status?from=2020-08-03T00:00:00Z&to=2020-08-05T00:00:00Z",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"covid",
+						"country",
+						":country",
+						"status",
+						":status"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "2020-08-03T00:00:00Z"
+						},
+						{
+							"key": "to",
+							"value": "2020-08-05T00:00:00Z"
+						}
+					],
+					"variable": [
+						{
+							"key": "country",
+							"value": "spain"
+						},
+						{
+							"key": "status",
+							"value": "CONFIRMED",
+							"description": "CONFIRMED, RECOVERED, DEATHS"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
